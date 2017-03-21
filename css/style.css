@@ -14,7 +14,7 @@
 
 .sidePanel {
   width: 30vw;
-  height: 100vh;
+  height: 550px;
   background-image: url(../img/back/scroll.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,7 +42,7 @@
   z-index: 5;
   width: 100px;
   height: 100px;
-  background-image: url(../img/bFull.jpg);
+  background-image: url(../img/Barrel_full.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: 390px;
@@ -60,6 +60,13 @@
   float: right;
 }
 
+h1 {
+  color: #333;
+  z-index: 15;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
 .pirateShip {
   position: relative;
   z-index: 10;
@@ -70,29 +77,33 @@
   background-size: contain;
   top: 190px;
   left: 980px;
-  animation: flow 25s ;
+  animation: flow 100s ;
 }
 
 @keyframes flow {
   0% { transform: translate(0, 0); }
-  5% { transform: translate(-20px, 10px); }
-  10% { transform: translate(-10px, 20px); }
-  20% { transform: translate(-100px, 20px); }
-  25% { transform: translate(-130px, 30px); }
-  30% { transform: translate(-150px, 0); }
-  35% { transform: translate(-250px, -20px); }
+  3% { transform: translate(-20px, 10px); }
+  4% { transform: translate(-20px, 10px) scaleX(-1); }
+  6% { transform: translate(-10px, 25px) scaleX(-1) rotate(10deg); }
+  7% { transform: translate(-10px, 25px) rotate(20deg); }
+  12% { transform: translate(-100px, 20px); }
+  18% { transform: translate(-150px, 30px) rotate(20deg); }
+  20% { transform: translate(-160px, -10px); }
+  23% { transform: translate(-250px, -20px) rotate(20deg); }
   40% { transform: translate(-300px, 100px); }
-  45% { transform: translate(-320px, 90px); }
-  50% { transform: translate(-150px, 250px); }
-  55% { transform: translate(-150px, 350px); }
-  60% { transform: translate(-50px, 350px); }
-  65% { transform: translate(-50px, 310px); }
-  70% { transform: translate(0, 310px); }
-  75% { transform: translate(50px, 250px); }
-  80% { transform: translate(100px, 250px); }
-  85% { transform: translate(150px, 250px); }
-  90% { transform: translate(220px, 150px); }
-  95% { transform: translate(290px, 90px); }
+  44% { transform: translate(-320px, 90px) rotate(20deg); }
+  45% { transform: translate(-320px, 90px) rotate(20deg) scaleX(-1); }
+  50% { transform: translate(-150px, 250px) scaleX(-1); }
+  56% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
+  59% { transform: translate(-150px, 350px) scaleX(-1); }
+  63% { transform: translate(-50px, 350px) scaleX(-1); }
+  65% { transform: translate(-50px, 310px) scaleX(-1); }
+  70% { transform: translate(0, 310px) scaleX(-1) rotate(-20deg); }
+  75% { transform: translate(50px, 250px) scaleX(-1); }
+  80% { transform: translate(100px, 250px) scaleX(-1); }
+  85% { transform: translate(150px, 350px) scaleX(-1) rotate(-20deg); }
+  90% { transform: translate(220px, 150px) scaleX(-1); }
+  95% { transform: translate(290px, 90px) scaleX(-1); }
   100% { transform: translate(280px, 70px); }
 }
 
@@ -106,17 +117,68 @@
   background-size: contain;
   top: 50px;
   left: 850px;
-  animation: ship1 5s ;
+  animation: ship1 8s;
+  animation-delay: 15s;
 }
 
 @keyframes ship1 {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(-100px, 20px); }
+  45% { transform: rotate(20deg); }
+  90% { transform: translate(-100px, 20px); }
+  100% { transform: translate(-100px, 20px) rotate(-40deg); }
 }
+
+/*.explosion1 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/explosion.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 70px;
+  left: 100px;
+}*/
+
+/*.explosion2 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/flame.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 20px;
+  left: 80px;
+}*/
+
+/*.explosion3 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/explosion.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 220px;
+  left: 10px;
+}*/
+
+/*.fire {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/fire.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 270px;
+  left: 620px;
+}*/
 
 .shipyard {
   position: absolute;
-  z-index: 10;
+  z-index: 5;
   width: 50px;
   height: 50px;
   background-image: url(../img/Shipyard.png);
@@ -212,13 +274,40 @@
   background-size: contain;
   top: 480px;
   left: 1280px;
-  animation: ship2 5s ;
+  animation: ship2 10s ;
+  animation-delay: 75s;
 }
 
 @keyframes ship2 {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(-200px, 0); }
+  40% { transform: translate(-150px, 0) rotate(0); }
+  60% { transform: translate(-150px, 0) rotate(20deg); }
+  100% { transform: translate(-180px, -100px) rotate(20deg); }
 }
+
+/*.explosion4 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/explosion.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 70px;
+  left: 20px;
+}*/
+
+/*.explosion5 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/explosion.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 170px;
+  left: 120px;
+}*/
 
 .treasure {
   position: absolute;
@@ -242,8 +331,9 @@
   background-size: contain;
   top: 50px;
   left: 650px;
-  display: none;
+  /*display: none;*/
   animation: ufo 5s ;
+  animation-delay: 100s;
 }
 
 @keyframes ufo {
@@ -251,3 +341,27 @@
   30% { transform: translate(0, 100px); }
   100% { transform: translate(0, 100px) scale(10); }
 }
+
+/*.explosion6 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/pulsegun.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 270px;
+  left: 620px;
+}*/
+
+/*.explosion7 {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../gif/pulsegun.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 270px;
+  left: 620px;
+}*/
