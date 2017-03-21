@@ -333,7 +333,7 @@ h1 {
   left: 650px;
   /*display: none;*/
   animation: ufo 5s ;
-  animation-delay: 100s;
+  animation-delay: 10s;
 }
 
 @keyframes ufo {
