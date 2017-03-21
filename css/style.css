@@ -15,12 +15,38 @@
 .sidePanel {
   width: 30vw;
   height: 100vh;
-  /*background-image: url(../img/back/panel2.jpg); panel 2 to obcięcia w photoshopie, jak starczy czasu*/
+  background-image: url(../img/back/scroll.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   z-index: 1;
   display: block;
   float: left;
+  margin-top: 50px;
+}
+
+.barrelEmpty {
+  position: absolute;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/bEmpty.ico);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 390px;
+  left: 280px;
+  display: none;
+}
+
+.barrelFull {
+  position: absolute;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/bFull.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 390px;
+  left: 280px;
 }
 
 .board {
@@ -44,6 +70,30 @@
   background-size: contain;
   top: 190px;
   left: 980px;
+  animation: flow 25s ;
+}
+
+@keyframes flow {
+  0% { transform: translate(0, 0); }
+  5% { transform: translate(-20px, 10px); }
+  10% { transform: translate(-10px, 20px); }
+  20% { transform: translate(-100px, 20px); }
+  25% { transform: translate(-130px, 30px); }
+  30% { transform: translate(-150px, 0); }
+  35% { transform: translate(-250px, -20px); }
+  40% { transform: translate(-300px, 100px); }
+  45% { transform: translate(-320px, 90px); }
+  50% { transform: translate(-150px, 250px); }
+  55% { transform: translate(-150px, 350px); }
+  60% { transform: translate(-50px, 350px); }
+  65% { transform: translate(-50px, 310px); }
+  70% { transform: translate(0, 310px); }
+  75% { transform: translate(50px, 250px); }
+  80% { transform: translate(100px, 250px); }
+  85% { transform: translate(150px, 250px); }
+  90% { transform: translate(220px, 150px); }
+  95% { transform: translate(290px, 90px); }
+  100% { transform: translate(280px, 70px); }
 }
 
 .ship1 {
@@ -56,6 +106,12 @@
   background-size: contain;
   top: 50px;
   left: 850px;
+  animation: ship1 5s ;
+}
+
+@keyframes ship1 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100px, 20px); }
 }
 
 .shipyard {
@@ -92,6 +148,7 @@
   background-size: contain;
   top: 430px;
   left: 940px;
+  display: none;
 }
 
 .monkeyFace {
@@ -129,6 +186,7 @@
   background-size: contain;
   top: 475px;
   left: 980px;
+  display: none;
 }
 
 .grave {
@@ -141,6 +199,7 @@
   background-size: contain;
   top: 430px;
   left: 940px;
+  display: none;
 }
 
 .ship2 {
@@ -153,6 +212,12 @@
   background-size: contain;
   top: 480px;
   left: 1280px;
+  animation: ship2 5s ;
+}
+
+@keyframes ship2 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-200px, 0); }
 }
 
 .treasure {
@@ -165,4 +230,24 @@
   background-size: contain;
   top: 230px;
   left: 1200px;
+}
+
+.ufo {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 55px;
+  background-image: url(../img/ufo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50px;
+  left: 650px;
+  display: none;
+  animation: ufo 5s ;
+}
+
+@keyframes ufo {
+  0% { transform: translate(0, 0); }
+  30% { transform: translate(0, 100px); }
+  100% { transform: translate(0, 100px) scale(10); }
 }
