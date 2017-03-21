@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/plank.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidePanel {
+  width: 30vw;
+  height: 100vh;
+  /*background-image: url(../img/panel2.jpg); panel 2 to obcięcia w photoshopie, jak starczy czasu*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  display: block;
+  float: left;
+}
+
+.board {
+  width: 70vw;
+  height: 100vh;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  display: block;
+  float: right;
+}
+
+.pirateShip {
+  position: relative;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  background-image: url(../img/ships/Pirate_Ship.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 190px;
+  left: 980px;
+}
+
+.ship1 {
+  position: relative;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  background-image: url(../img/ships/Warrior.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50px;
+  left: 850px;
+}
+
+.ship2 {
+  position: relative;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  background-image: url(../img/ships/japanese_ship.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 500px;
+  left: 1300px;
+}
+
+.palm {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/monkey/palm2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 400px;
+  left: 850px;
+}
+
+.monkey {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/monkey/monkey.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 430px;
+  left: 840px;
+}
+
+/*.monkeyFace {
+  position: absolute;
+  z-index: 100;
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/monkey/monkeyFace.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 200px;
+  left: 800px;
+}*/
+
+.banana {
+  position: relative;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/monkey/banana.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 430px;
+  left: 840px;
+}
+
+.bananas {
+  position: absolute;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/monkey/bananas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 440px;
+  left: 820px;
+}
+
+.grave {
+  position: absolute;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/monkey/RIP.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 410px;
+  left: 870px;
+}
