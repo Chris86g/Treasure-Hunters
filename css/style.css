@@ -119,7 +119,7 @@ body {
   20% { transform: translate(-160px, -10px); }
   23% { transform: translate(-250px, -20px) rotate(20deg); }
   40% { transform: translate(-300px, 100px); }
-  44% { transform: translate(-320px, 90px) rotate(20deg); }
+  /*44% { transform: translate(-320px, 90px) rotate(20deg); }
   45% { transform: translate(-320px, 90px) rotate(20deg) scaleX(-1); }
   50% { transform: translate(-150px, 250px) scaleX(-1); }
   56% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
@@ -132,7 +132,7 @@ body {
   85% { transform: translate(150px, 350px) scaleX(-1) rotate(-20deg); }
   90% { transform: translate(220px, 150px) scaleX(-1); }
   95% { transform: translate(290px, 90px) scaleX(-1); }
-  100% { transform: translate(280px, 70px); }
+  100% { transform: translate(280px, 70px); }*/
 }
 
 .ship1 {
@@ -143,66 +143,64 @@ body {
   background-image: url(../img/ships/Warrior.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 50px;
-  left: 850px;
-  animation: ship1 8s;
-  animation-delay: 15s;
+  top: 10px;
+  left: 900px;
+  animation: ship1 15s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
 }
 
 @keyframes ship1 {
   0% { transform: translate(0, 0); }
-  45% { transform: rotate(20deg); }
-  90% { transform: translate(-100px, 20px); }
-  100% { transform: translate(-100px, 20px) rotate(-40deg); }
+  15% { transform: translate(-100px, 20px); }
+  18% { transform: translate(-100px, 20px) rotate(-40deg); }
+  30% { transform: translate(-100px, 60px) rotate(-40deg); }
+  33% { transform: translate(-100px, 60px) rotate(20deg); }
+  45% { transform: translate(-150px, 90px) rotate(20deg); }
+  48% { transform: translate(-150px, 90px) rotate(40deg); }
+  80% { transform: translate(-230px, 80px) rotate(40deg); }
+  97% { transform: translate(-250px, 80px) rotate(40deg); }
+  100% { transform: translate(-250px, 80px) rotate(-40deg); }
 }
 
-.explosion1 {
-  position: absolute;
+.explosion {
+  position: relative;
   z-index: 10;
   width: 50px;
   height: 50px;
   background-image: url(../gif/giphy.gif);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 70px;
-  left: 100px;
+  top: 5px;
+  left: 10px;
 }
 
-/*.explosion2 {
-  position: absolute;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  background-image: url(../gif/flame.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 20px;
-  left: 80px;
-}*/
+.ex1 {
 
-/*.explosion3 {
-  position: absolute;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  background-image: url(../gif/explosion.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 220px;
-  left: 10px;
-}*/
+}
+
+.ex2 {
+
+}
 
 .fire {
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 50px;
   height: 50px;
   background-image: url(../gif/firetr.gif);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 270px;
-  left: 620px;
+  top: -60px;
+  left: 15px;
+}
+
+.f1 {
+
+}
+
+.f2 {
+
 }
 
 .shipyard {
@@ -239,7 +237,6 @@ body {
   background-size: contain;
   top: 430px;
   left: 940px;
-
 }
 
 .monkeyFace {
@@ -315,29 +312,10 @@ body {
   100% { transform: translate(-180px, -100px) rotate(20deg); }
 }
 
-/*.explosion4 {
-  position: absolute;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/explosion.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 70px;
-  left: 20px;
-}*/
-
-/*.explosion5 {
-  position: absolute;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  background-image: url(../gif/explosion.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 170px;
-  left: 120px;
-}*/
+.ex3 {
+  /*top: 70px;
+  left: 20px;*/
+}
 
 .treasure {
   position: absolute;
@@ -361,7 +339,7 @@ body {
   background-size: contain;
   top: 50px;
   left: 650px;
-  /*display: none;*/
+  display: none;
   animation: ufo 5s ;
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -372,30 +350,6 @@ body {
   30% { transform: translate(0, 250px); }
   100% { transform: translate(0, 250px) scale(12); }
 }
-
-/*.explosion6 {
-  position: absolute;
-  z-index: 10;hgtf
-  width: 50px;
-  height: 50px;
-  background-image: url(../gif/pulsegun.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 270px;
-  left: 620px;
-}*/
-
-/*.explosion7 {
-  position: absolute;
-  z-index: 10;
-  width: 50px;
-  height: 50px;
-  background-image: url(../gif/pulsegun.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 270px;
-  left: 620px;
-}*/
 
 .gameOver {
   width: 100%;
