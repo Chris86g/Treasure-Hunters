@@ -1,7 +1,30 @@
+@font-face { font-family: Rapscall; src: url('../fonts/RAPSCALL.TTF'); }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Rapscall, serif;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/back/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.intro h1 {
+  font-size: 120px;
+  margin: 40px;
 }
 
 .background {
@@ -60,7 +83,8 @@
   float: right;
 }
 
-h1 {
+.sidePanel h1 {
+  font-size: 42px;
   color: #333;
   z-index: 15;
   margin-top: 80px;
@@ -78,6 +102,7 @@ h1 {
   top: 190px;
   left: 980px;
   animation: flow 100s ;
+  animation-fill-mode: forwards;
 }
 
 @keyframes flow {
@@ -119,6 +144,7 @@ h1 {
   left: 850px;
   animation: ship1 8s;
   animation-delay: 15s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes ship1 {
@@ -210,7 +236,7 @@ h1 {
   background-size: contain;
   top: 430px;
   left: 940px;
-  display: none;
+
 }
 
 .monkeyFace {
@@ -248,7 +274,7 @@ h1 {
   background-size: contain;
   top: 475px;
   left: 980px;
-  display: none;
+
 }
 
 .grave {
@@ -261,7 +287,7 @@ h1 {
   background-size: contain;
   top: 430px;
   left: 940px;
-  display: none;
+
 }
 
 .ship2 {
@@ -276,6 +302,7 @@ h1 {
   left: 1280px;
   animation: ship2 10s ;
   animation-delay: 75s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes ship2 {
@@ -333,18 +360,19 @@ h1 {
   left: 650px;
   /*display: none;*/
   animation: ufo 5s ;
-  animation-delay: 10s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes ufo {
   0% { transform: translate(0, 0); }
-  30% { transform: translate(0, 100px); }
-  100% { transform: translate(0, 100px) scale(10); }
+  30% { transform: translate(0, 220px); }
+  100% { transform: translate(0, 220px) scale(12); }
 }
 
 /*.explosion6 {
   position: absolute;
-  z-index: 10;
+  z-index: 10;hgtf
   width: 50px;
   height: 50px;
   background-image: url(../gif/pulsegun.gif);
@@ -365,3 +393,18 @@ h1 {
   top: 270px;
   left: 620px;
 }*/
+
+.gameOver {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/back/gameOver.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gameOver h1 {
+  font-size: 200px;
+}
