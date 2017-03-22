@@ -11,7 +11,7 @@ body {
 }
 
 .intro {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url(../img/back/intro.jpg);
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
 }
 
 .background {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url(../img/back/plank.jpg);
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body {
 }
 
 .sidePanel {
-  width: 30vw;
+  width: 30%;
   height: 550px;
   background-image: url(../img/back/scroll.png);
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
 }
 
 .board {
-  width: 70vw;
+  width: 70%;
   height: 100vh;
   background-image: url(../img/back/map.jpg);
   background-repeat: no-repeat;
@@ -398,7 +398,7 @@ body {
 }*/
 
 .gameOver {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url(../img/back/gameOver.jpg);
   background-repeat: no-repeat;
