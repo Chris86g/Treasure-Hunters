@@ -49,6 +49,30 @@ body {
   margin-top: 50px;
 }
 
+.food {
+  position: absolute;
+  z-index: 5;
+  width: 75px;
+  height: 75px;
+  background-image: url(../img/monkey/bananas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 440px;
+  left: 80px;
+}
+
+.rum {
+  position: absolute;
+  z-index: 5;
+  width: 75px;
+  height: 75px;
+  background-image: url(../img/Rum_Bottle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 420px;
+  left: 190px;
+}
+
 .barrelEmpty {
   position: absolute;
   z-index: 5;
@@ -59,7 +83,7 @@ body {
   background-size: contain;
   top: 390px;
   left: 280px;
-  display: none;
+  visibility: hidden;
 }
 
 .barrelFull {
@@ -94,6 +118,15 @@ body {
   margin-left: 80px;
 }
 
+.sidePanel h2 {
+  font-size: 32px;
+  color: #222;
+  text-shadow: 0 0 3px red;
+  z-index: 15;
+  margin-top: 60px;
+  margin-left: 80px;
+}
+
 .pirateShip {
   position: relative;
   z-index: 10;
@@ -105,22 +138,24 @@ body {
   top: 190px;
   left: 980px;
   animation: flow 100s ;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
 @keyframes flow {
   0% { transform: translate(0, 0); }
-  3% { transform: translate(-20px, 10px); }
-  4% { transform: translate(-20px, 10px) scaleX(-1); }
-  6% { transform: translate(-10px, 25px) scaleX(-1) rotate(10deg); }
-  7% { transform: translate(-10px, 25px) rotate(20deg); }
+  2% { transform: translate(-20px, 10px); }
+  3% { transform: translate(-20px, 10px) scaleX(-1); }
+  5% { transform: translate(-10px, 25px) scaleX(-1) rotate(10deg); }
+  6% { transform: translate(-10px, 25px) rotate(20deg); }
   12% { transform: translate(-100px, 20px); }
   18% { transform: translate(-150px, 30px) rotate(20deg); }
   20% { transform: translate(-160px, -10px); }
-  23% { transform: translate(-250px, -20px) rotate(20deg); }
+  25% { transform: translate(-250px, -20px) rotate(20deg); }
   40% { transform: translate(-300px, 100px); }
-  /*44% { transform: translate(-320px, 90px) rotate(20deg); }
-  45% { transform: translate(-320px, 90px) rotate(20deg) scaleX(-1); }
+  44% { transform: translate(-320px, 90px) rotate(20deg); }
+  45% { transform: translate(-320px, 90px) rotate(20deg); }
+  46% { transform: translate(-320px, 90px) rotate(20deg) scaleX(-1); }
   50% { transform: translate(-150px, 250px) scaleX(-1); }
   56% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
   59% { transform: translate(-150px, 350px) scaleX(-1); }
@@ -132,7 +167,7 @@ body {
   85% { transform: translate(150px, 350px) scaleX(-1) rotate(-20deg); }
   90% { transform: translate(220px, 150px) scaleX(-1); }
   95% { transform: translate(290px, 90px) scaleX(-1); }
-  100% { transform: translate(280px, 70px); }*/
+  100% { transform: translate(280px, 70px); }
 }
 
 .ship1 {
@@ -146,12 +181,16 @@ body {
   top: 10px;
   left: 900px;
   animation: ship1 15s;
-  animation-delay: 10s;
+  animation-delay: 16s;
   animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
 @keyframes ship1 {
-  0% { transform: translate(0, 0); }
+  0% {
+    visibility: visible;
+    transform: translate(0, 0);
+  }
   15% { transform: translate(-100px, 20px); }
   18% { transform: translate(-100px, 20px) rotate(-40deg); }
   30% { transform: translate(-100px, 60px) rotate(-40deg); }
@@ -160,7 +199,14 @@ body {
   48% { transform: translate(-150px, 90px) rotate(40deg); }
   80% { transform: translate(-230px, 80px) rotate(40deg); }
   97% { transform: translate(-250px, 80px) rotate(40deg); }
-  100% { transform: translate(-250px, 80px) rotate(-40deg); }
+  99% {
+    visibility: visible;
+    transform: translate(-250px, 80px) rotate(-40deg);
+  }
+  100% {
+    visibility: hidden;
+    transform: translate(-250px, 80px) rotate(-40deg);
+  }
 }
 
 .explosion {
@@ -173,14 +219,40 @@ body {
   background-size: contain;
   top: 5px;
   left: 10px;
+  visibility: hidden;
+}
+
+@keyframes showEx1 {
+  0% {visibility: hidden;}
+  21% {visibility: hidden;}
+  22% {visibility: visible;}
+  23% {visibility: hidden}
+  79% {visibility: hidden;}
+  80% {visibility: visible;}
+  85% {visibility: visible;}
+  100% {visibility: hidden}
 }
 
 .ex1 {
+  animation: showEx1 100s;
+  animation-delay: 2s;
+}
 
+@keyframes showEx2 {
+  0% {visibility: hidden;}
+  32% {visibility: hidden;}
+  33% {visibility: visible;}
+  36% {visibility: hidden}
+  79% {visibility: hidden;}
+  80% {visibility: visible;}
+  85% {visibility: visible;}
+  86% {visibility: hidden}
+  100% {visibility: hidden}
 }
 
 .ex2 {
-
+  animation: showEx2 15s;
+  animation-delay: 16s;
 }
 
 .fire {
@@ -193,14 +265,60 @@ body {
   background-size: contain;
   top: -60px;
   left: 15px;
+  visibility: hidden;
+}
+
+@keyframes showF1 {
+  0% {visibility: hidden;}
+  23% {visibility: hidden;}
+  24% {visibility: visible;}
+  44% {visibility: visible;}
+  45% {visibility: hidden;}
+  100% {visibility: hidden;}
 }
 
 .f1 {
+  animation: showF1 100s;
+  animation-delay: 2s;
+}
 
+@keyframes showF2 {
+  0% {visibility: hidden;}
+  33% {visibility: hidden;}
+  34% {visibility: visible;}
+  100% {visibility: visible;}
 }
 
 .f2 {
+  animation: showF2 15s;
+  animation-delay: 16s;
+}
 
+.raft {
+  position: relative;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/ships/raft.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -20px;
+  left: 650px;
+  transform-origin: 25px 30px;
+  animation: wave 2s infinite alternate;
+  animation-delay: 31.5s;
+  visibility: hidden;
+}
+
+@keyframes wave {
+  0% {
+    visibility: visible;
+    transform: rotate(-15deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotate(15deg);
+  }
 }
 
 .shipyard {
@@ -227,6 +345,37 @@ body {
   left: 920px;
 }
 
+.bottle {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/bottle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 430px;
+  left: 860px;
+  animation: throwBot 2s;
+  /*animation-delay: 56s;*/
+  animation-fill-mode: forwards;
+  /*visibility: hidden;*/
+}
+
+@keyframes throwBot {
+  0% {
+    visibility: visible;
+    transform: rotate(-15deg);
+  }
+  99% {
+    visibility: visible;
+    transform: translate(105px, -20px) rotate(15deg);
+  }
+  100% {
+    /*visibility: hidden;*/
+    transform: rotate(15deg);
+  }
+}
+
 .monkey {
   position: absolute;
   z-index: 10;
@@ -237,6 +386,7 @@ body {
   background-size: contain;
   top: 430px;
   left: 940px;
+  visibility: hidden;
 }
 
 .monkeyFace {
@@ -249,7 +399,7 @@ body {
   background-size: contain;
   top: 60px;
   left: 750px;
-  display: none;
+  visibility: hidden;
 }
 
 .banana {
@@ -274,7 +424,6 @@ body {
   background-size: contain;
   top: 475px;
   left: 980px;
-
 }
 
 .grave {
@@ -287,7 +436,7 @@ body {
   background-size: contain;
   top: 430px;
   left: 940px;
-
+  visibility: hidden;
 }
 
 .ship2 {
@@ -303,18 +452,38 @@ body {
   animation: ship2 10s ;
   animation-delay: 75s;
   animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
 @keyframes ship2 {
-  0% { transform: translate(0, 0); }
+  0% {
+    visibility: visible;
+    transform: translate(0, 0);
+   }
   40% { transform: translate(-150px, 0) rotate(0); }
   60% { transform: translate(-150px, 0) rotate(20deg); }
-  100% { transform: translate(-180px, -100px) rotate(20deg); }
+  99% { transform: translate(-180px, -100px) rotate(20deg); }
+  100% {
+    visibility: hidden;
+    transform: translate(-180px, -100px) rotate(20deg);
+  }
+}
+
+@keyframes showEx3 {
+  0% {visibility: hidden;}
+  32% {visibility: hidden;}
+  33% {visibility: visible;}
+  36% {visibility: hidden}
+  79% {visibility: hidden;}
+  80% {visibility: visible;}
+  85% {visibility: visible;}
+  86% {visibility: hidden}
+  100% {visibility: hidden}
 }
 
 .ex3 {
-  /*top: 70px;
-  left: 20px;*/
+  animation: showEx3 10s;
+  animation-delay: 75s;
 }
 
 .treasure {
@@ -334,22 +503,28 @@ body {
   z-index: 10;
   width: 100px;
   height: 55px;
-  background-image: url(../img/ufo.png);
+  background-image: url(../img/ships/ufo.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: 50px;
   left: 650px;
-  display: none;
   animation: ufo 5s ;
-  animation-delay: 1s;
+  animation-delay: 102s;
   animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
-@keyframes ufo {
-  0% { transform: translate(0, 0); }
+/*@keyframes ufo {
+  0% {
+    visibility: visible;
+    transform: translate(0, 0);
+  }
   30% { transform: translate(0, 250px); }
-  100% { transform: translate(0, 250px) scale(12); }
-}
+  100% {
+    visibility: visible;
+    transform: translate(0, 250px) scale(12);
+  }
+}*/
 
 .gameOver {
   width: 100%;
