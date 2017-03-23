@@ -355,8 +355,8 @@ body {
   61% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
   63% { transform: translate(-150px, 350px) scaleX(-1); }
   66% { transform: translate(-50px, 350px) scaleX(-1) rotate(45deg); }
-  68% { transform: translate(-50px, 350px) scaleX(-1) rotate(120deg); }
-  71% { transform: translate(-50px, 310px) scaleX(-1) rotate(120deg); }
+  68% { transform: translate(-50px, 350px) scaleX(-1) rotate(90deg); }
+  71% { transform: translate(-50px, 310px) scaleX(-1) rotate(90deg); }
   72% { transform: translate(-50px, 310px) scaleX(-1) rotate(0); }
   /*Ship2*/
   74% { transform: translate(0, 310px) scaleX(-1); }
@@ -365,8 +365,8 @@ body {
   80% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
   84% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
   85% { transform: translate(150px, 280px) scaleX(-1) rotate(-20deg); }
-  87% { transform: translate(150px, 280px) scaleX(-1) rotate(120deg); }
-  92% { transform: translate(220px, 150px) scaleX(-1) rotate(120deg);}
+  87% { transform: translate(150px, 280px) scaleX(-1) rotate(90deg); }
+  92% { transform: translate(220px, 150px) scaleX(-1) rotate(90deg);}
   95% { transform: translate(290px, 90px) scaleX(-1) rotate(0);}
   97% { transform: translate(280px, 70px); }
   100% { transform: translate(280px, 70px); }
@@ -923,4 +923,17 @@ body {
   font-size: 200px;
   color: #111;
   text-shadow: 0 0 8px #ddd;
+}
+
+.intro {
+
+
+}
+
+.background {
+  display: none;
+}
+
+.gameOver {
+  display: none;
 }
