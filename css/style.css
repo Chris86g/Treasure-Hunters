@@ -93,8 +93,8 @@ body {
   0% {visibility: hidden;}
   44% {visibility: hidden;}
   45% {visibility: visible;}
-  53% {visibility: visible;}
-  54% {visibility: hidden;}
+  52% {visibility: visible;}
+  53% {visibility: hidden;}
   100% {visibility: hidden;}
 }
 
@@ -278,6 +278,7 @@ body {
   background-size: contain;
   top: 190px;
   left: 980px;
+  transform-origin: 27px 27px;
   animation: flow 100s ;
   animation-delay: 2s;
   animation-fill-mode: forwards;
@@ -296,18 +297,21 @@ body {
   40% { transform: translate(-300px, 100px); }
   44% { transform: translate(-320px, 90px) rotate(20deg); }
   45% { transform: translate(-320px, 90px) rotate(20deg); }
+  /*Tortuga*/
   46% { transform: translate(-320px, 90px) rotate(20deg) scaleX(-1); }
   50% { transform: translate(-150px, 250px) scaleX(-1); }
-  56% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
-  59% { transform: translate(-150px, 350px) scaleX(-1); }
-  63% { transform: translate(-50px, 350px) scaleX(-1); }
-  65% { transform: translate(-50px, 310px) scaleX(-1); }
-  70% { transform: translate(0, 310px) scaleX(-1) rotate(-20deg); }
-  75% { transform: translate(50px, 250px) scaleX(-1); }
-  80% { transform: translate(100px, 250px) scaleX(-1); }
-  85% { transform: translate(150px, 350px) scaleX(-1) rotate(-20deg); }
-  90% { transform: translate(220px, 150px) scaleX(-1); }
-  95% { transform: translate(290px, 90px) scaleX(-1); }
+  61% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
+  63% { transform: translate(-150px, 350px) scaleX(-1); }
+  66% { transform: translate(-50px, 350px) scaleX(-1); }
+  68% { transform: translate(-50px, 350px) scaleX(-1) rotate(120deg); }
+  71% { transform: translate(-50px, 310px) scaleX(-1) rotate(120deg); }
+  74% { transform: translate(0, 310px) scaleX(-1); }
+  77% { transform: translate(50px, 250px) scaleX(-1); }
+  80% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
+  85% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
+  86% { transform: translate(150px, 320px) scaleX(-1) rotate(120deg); }
+  95% { transform: translate(220px, 150px) scaleX(-1) rotate(120deg);}
+  98% { transform: translate(290px, 90px) scaleX(-1); }
   100% { transform: translate(280px, 70px); }
 }
 
@@ -488,22 +492,19 @@ body {
 }
 
 .bottle {
-  position: absolute;
-  z-index: 3;
   width: 50px;
   height: 50px;
+  z-index: 3;
   background-image: url(../img/bottle.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 430px;
-  left: 860px;
   transform-origin: 5px 30px;
-  animation: throwBot 2s linear forwards;
-  /*animation-delay: 53s, 53s;*/
-  /*visibility: hidden;*/
+  animation: rotateBot 2s linear forwards;
+  animation-delay: 55s;
+  visibility: hidden;
 }
 
-@keyframes throwBot {
+@keyframes rotateBot {
   0% {
     visibility: visible;
     transform: rotate(0);
@@ -516,12 +517,24 @@ body {
   }
   99% {
     visibility: visible;
-    transform: translate(105px, -20px) ;
   }
   100% {
     visibility: hidden;
-    transform: translate(105px, -20px) rotate(1080deg);
+    transform: rotate(1080deg);
   }
+}
+
+.bottleWrap {
+  position: absolute;
+  top: 430px;
+  left: 860px;
+  animation: moveBot 2s linear forwards;
+  animation-delay: 55s;
+}
+
+@keyframes moveBot {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(105px, -20px) ;}
 }
 
 .monkey {
@@ -535,6 +548,17 @@ body {
   top: 430px;
   left: 940px;
   visibility: hidden;
+  animation: monkey 100s ;
+  animation-delay: 2s;
+}
+
+@keyframes monkey {
+  0% {visibility: hidden;}
+  55% {visibility: hidden;}
+  56% {visibility: visible;}
+  68% {visibility: visible;}
+  69% {visibility: hidden;}
+  100% {visibility: hidden;}
 }
 
 .monkeyFace {
@@ -548,18 +572,98 @@ body {
   top: 60px;
   left: 750px;
   visibility: hidden;
+  animation: monkeyFace 100s ;
+  animation-delay: 2s;
+}
+
+@keyframes monkeyFace {
+  0% {visibility: hidden;}
+  55% {visibility: hidden;}
+  56% {visibility: visible;}
+  57% {visibility: visible;}
+  58% {visibility: hidden;}
+  100% {visibility: hidden;}
+}
+
+.bananaWrap {
+  position: relative;
+  left: 990px;
+}
+
+.bW1 {
+  top: 260px;
+  animation: moveBan1 2s forwards;
+  animation-delay: 61s;
+}
+
+@keyframes moveBan1 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-125px, 0);}
+}
+
+.bW2 {
+  top: 240px;
+  animation: moveBan2 2s forwards;
+  animation-delay: 63s;
+}
+
+@keyframes moveBan2 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-125px, 70px);}
+}
+
+.bW3 {
+  top: 220px;
+  animation: moveBan3 2s forwards;
+  animation-delay: 65s;
+}
+
+@keyframes moveBan3 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-55px, 70px);}
 }
 
 .banana {
-  position: relative;
   z-index: 10;
   width: 20px;
   height: 20px;
+  transform-origin: 10px 10px;
   background-image: url(../img/monkey/banana.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 310px;
-  left: 990px;
+  animation: rotateBan 2s forwards;
+}
+
+.b1 {
+  animation-delay: 61s;
+}
+
+.b2 {
+  animation-delay: 63s;
+}
+
+.b3 {
+  animation-delay: 65s;
+}
+
+@keyframes rotateBan {
+  0% {
+    visibility: visible;
+    transform: rotate(0);
+  }
+  33.3% {
+    transform: rotate(-360deg);
+  }
+  66.6% {
+    transform: rotate(-720deg);
+  }
+  99% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    transform: rotate(-1080deg);
+  }
 }
 
 .bananas {
@@ -577,14 +681,23 @@ body {
 .grave {
   position: absolute;
   z-index: 6;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   background-image: url(../img/monkey/RIP.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 430px;
-  left: 940px;
+  top: 455px;
+  left: 955px;
   visibility: hidden;
+  animation: grave 100s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes grave {
+  0% {visibility: hidden;}
+  68% {visibility: hidden;}
+  69% {visibility: visible;}
+  100% {visibility: visible;}
 }
 
 .ship2 {
