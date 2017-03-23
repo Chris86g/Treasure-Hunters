@@ -213,8 +213,13 @@ body {
   45% {
     width: 248px;
     background-color: #26df26;}
-  99% {background-color: #26df26;}
-  100% {background-color: #f62b20;}
+  99% {
+    width: 248px;
+    background-color: #26df26;
+  }
+  100% {
+    width: 3px;
+    background-color: #f62b20;}
 }
 
 .ammo .stripe {
@@ -407,8 +412,8 @@ body {
 
 @keyframes showF1 {
   0% {visibility: hidden;}
-  23% {visibility: hidden;}
-  24% {visibility: visible;}
+  25% {visibility: hidden;}
+  26% {visibility: visible;}
   44% {visibility: visible;}
   45% {visibility: hidden;}
   100% {visibility: hidden;}
@@ -492,10 +497,10 @@ body {
   background-size: contain;
   top: 430px;
   left: 860px;
-  animation: throwBot 2s linear;
-  /*animation-delay: 53s;*/
-  animation-fill-mode: forwards;
-  visibility: hidden;
+  transform-origin: 5px 30px;
+  animation: throwBot 2s linear forwards;
+  /*animation-delay: 53s, 53s;*/
+  /*visibility: hidden;*/
 }
 
 @keyframes throwBot {
@@ -503,25 +508,19 @@ body {
     visibility: visible;
     transform: rotate(0);
   }
-  25% {
-    visibility: visible;
-    transform: translate(27px, -5px) rotate(360deg);
+  33.3% {
+    transform: rotate(360deg);
   }
-  50% {
-    visibility: visible;
-    transform: translate(53px, -10px) rotate(0);
-  }
-  75% {
-    visibility: visible;
-    transform: translate(80px, -15px) rotate(360deg);
+  66.6% {
+    transform: rotate(720deg);
   }
   99% {
     visibility: visible;
-    transform: translate(105px, -20px) rotate(0);
+    transform: translate(105px, -20px) ;
   }
   100% {
     visibility: hidden;
-    transform: translate(105px, -20px) rotate(0);
+    transform: translate(105px, -20px) rotate(1080deg);
   }
 }
 
