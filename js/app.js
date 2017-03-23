@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     secBackground.style.display = "block";
     introMP3.pause();
     waveWAV.loop = true;
-    waveWAV.play();
+    // waveWAV.play();
     eFX.play();
 
   })
