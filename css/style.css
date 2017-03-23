@@ -10,9 +10,12 @@ body {
   font-family: Rapscall, serif;
 }
 
-.intro {
+.container {
   width: 100%;
   height: 100vh;
+}
+
+.intro {
   background-image: url(../img/back/intro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,8 +33,6 @@ body {
 }
 
 .background {
-  width: 100%;
-  height: 100vh;
   background-image: url(../img/back/plank.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,6 +72,10 @@ body {
   45% {visibility: visible;}
   53% {visibility: visible;}
   54% {visibility: hidden;}
+  71% {visibility: hidden;}
+  72% {visibility: visible;}
+  85% {visibility: visible;}
+  86% {visibility: hidden;}
   100% {visibility: hidden;}
 }
 
@@ -119,7 +124,10 @@ body {
   26% {visibility: visible;}
   44% {visibility: visible;}
   45% {visibility: hidden}
-  100% {visibility: hidden}
+  80.5% {visibility: hidden;}
+  81% {visibility: visible;}
+  99% {visibility: visible;}
+  100% {visibility: hidden;}
 }
 
 .barrelFull {
@@ -142,6 +150,9 @@ body {
   26% {visibility: hidden;}
   44% {visibility: hidden;}
   45% {visibility: visible;}
+  80.5% {visibility: visible;}
+  81% {visibility: hidden;}
+  99% {visibility: hidden;}
   100% {visibility: visible;}
 }
 
@@ -194,12 +205,24 @@ body {
     width: 248px;
     background-color: #26df26;
   }
+  22.5% {
+    width: 186px;
+    background-color: #26df26;
+  }
   23% {
     width: 186px;
     background-color: #26df26;
   }
+  24.5% {
+    width: 124px;
+    background-color: #f62b20;
+  }
   25% {
     width: 124px;
+    background-color: #f62b20;
+  }
+  26.5% {
+    width: 62px;
     background-color: #f62b20;
   }
   27% {
@@ -212,14 +235,20 @@ body {
   }
   45% {
     width: 248px;
-    background-color: #26df26;}
-  99% {
+    background-color: #26df26;
+  }
+  80% {
     width: 248px;
     background-color: #26df26;
   }
+  80.5% {
+    width: 186px;
+    background-color: #26df26;
+  }
   100% {
-    width: 3px;
-    background-color: #f62b20;}
+    width: 186px;
+    background-color: #26df26;
+  }
 }
 
 .ammo .stripe {
@@ -254,7 +283,30 @@ body {
     width: 248px;
     background-color: #26df26;
   }
-  100% {background-color: #26df26;}
+  77% {
+    width: 248px;
+    background-color: #26df26;
+  }
+  77.5% {
+    width: 124px;
+    background-color: #f62b20;
+  }
+  80.5% {
+    width: 124px;
+    background-color: #f62b20;
+  }
+  81% {
+    width: 10px;
+    background-color: #f62b20;
+  }
+  99% {
+    width: 10px;
+    background-color: #f62b20;
+  }
+  100% {
+    width: 248px;
+    background-color: #26df26;
+  }
 }
 
 .board {
@@ -302,16 +354,21 @@ body {
   50% { transform: translate(-150px, 250px) scaleX(-1); }
   61% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
   63% { transform: translate(-150px, 350px) scaleX(-1); }
-  66% { transform: translate(-50px, 350px) scaleX(-1); }
+  66% { transform: translate(-50px, 350px) scaleX(-1) rotate(45deg); }
   68% { transform: translate(-50px, 350px) scaleX(-1) rotate(120deg); }
   71% { transform: translate(-50px, 310px) scaleX(-1) rotate(120deg); }
+  72% { transform: translate(-50px, 310px) scaleX(-1) rotate(0); }
+  /*Ship2*/
   74% { transform: translate(0, 310px) scaleX(-1); }
   77% { transform: translate(50px, 250px) scaleX(-1); }
+  78% { transform: translate(50px, 250px) scaleX(-1) rotate(-20deg); }
   80% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
-  85% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
-  86% { transform: translate(150px, 320px) scaleX(-1) rotate(120deg); }
-  95% { transform: translate(220px, 150px) scaleX(-1) rotate(120deg);}
-  98% { transform: translate(290px, 90px) scaleX(-1); }
+  84% { transform: translate(100px, 250px) scaleX(-1) rotate(-20deg); }
+  85% { transform: translate(150px, 280px) scaleX(-1) rotate(-20deg); }
+  87% { transform: translate(150px, 280px) scaleX(-1) rotate(120deg); }
+  92% { transform: translate(220px, 150px) scaleX(-1) rotate(120deg);}
+  95% { transform: translate(290px, 90px) scaleX(-1) rotate(0);}
+  97% { transform: translate(280px, 70px); }
   100% { transform: translate(280px, 70px); }
 }
 
@@ -373,9 +430,9 @@ body {
   22% {visibility: visible;}
   25% {visibility: visible;}
   26% {visibility: hidden}
-  79% {visibility: hidden;}
-  80% {visibility: visible;}
-  85% {visibility: visible;}
+  80% {visibility: hidden;}
+  80.5% {visibility: visible;}
+  81% {visibility: hidden}
   100% {visibility: hidden}
 }
 
@@ -448,12 +505,21 @@ body {
   background-image: url(../img/ships/raft.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: -20px;
-  left: 650px;
   transform-origin: 25px 30px;
   animation: wave 2s infinite alternate;
-  animation-delay: 31.5s;
   visibility: hidden;
+}
+
+.r1 {
+  animation-delay: 31.5s;
+  top: 45px;
+  left: 660px;
+}
+
+.r2 {
+  animation-delay: 85.5s;
+  top: 270px;
+  left: 1100px;
 }
 
 @keyframes wave {
@@ -591,7 +657,7 @@ body {
 }
 
 .bW1 {
-  top: 260px;
+  top: 210px;
   animation: moveBan1 2s forwards;
   animation-delay: 61s;
 }
@@ -602,7 +668,7 @@ body {
 }
 
 .bW2 {
-  top: 240px;
+  top: 190px;
   animation: moveBan2 2s forwards;
   animation-delay: 63s;
 }
@@ -613,7 +679,7 @@ body {
 }
 
 .bW3 {
-  top: 220px;
+  top: 170px;
   animation: moveBan3 2s forwards;
   animation-delay: 65s;
 }
@@ -708,7 +774,7 @@ body {
   background-image: url(../img/ships/japanese_ship.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 480px;
+  top: 430px;
   left: 1280px;
   animation: ship2 10s ;
   animation-delay: 75s;
@@ -747,6 +813,18 @@ body {
   animation-delay: 75s;
 }
 
+@keyframes showF3 {
+  0% {visibility: hidden;}
+  33% {visibility: hidden;}
+  34% {visibility: visible;}
+  100% {visibility: visible;}
+}
+
+.f3 {
+  animation: showF3 10s;
+  animation-delay: 75s;
+}
+
 .treasure {
   position: absolute;
   z-index: 5;
@@ -761,7 +839,7 @@ body {
 
 .ufo {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   width: 100px;
   height: 55px;
   background-image: url(../img/ships/ufo.png);
@@ -775,7 +853,7 @@ body {
   visibility: hidden;
 }
 
-/*@keyframes ufo {
+@keyframes ufo {
   0% {
     visibility: visible;
     transform: translate(0, 0);
@@ -785,11 +863,54 @@ body {
     visibility: visible;
     transform: translate(0, 250px) scale(12);
   }
-}*/
+}
+
+.beam {
+  width: 3px;
+  height: 1px;
+  position: relative;
+  top: 20px;
+  left: 70px;
+  background-color: #58C3C2;
+  border-radius: 5px;
+  z-index: 25;
+  visibility: hidden;
+  animation: laser 0.2s ;
+  animation-delay: 119s;
+}
+
+@keyframes laser {
+  0% {
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+  100% {
+    visibility: visible;
+    transform: translate(25px, 5px);
+  }
+}
+
+.finalExplosion {
+  position: relative;
+  z-index: 10;
+  width: 150px;
+  height: 150px;
+  background-image: url(../gif/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -120px;
+  left: 1240px;
+  visibility: hidden;
+  animation: showFinEx 1.5s;
+  animation-delay: 120s;
+}
+
+@keyframes showFinEx {
+  0% {visibility: visible;}
+  100% {visibility: visible;}
+}
 
 .gameOver {
-  width: 100%;
-  height: 100vh;
   background-image: url(../img/back/gameOver.jpg);
   background-repeat: no-repeat;
   background-size: cover;
