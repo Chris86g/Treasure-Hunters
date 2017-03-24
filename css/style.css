@@ -50,6 +50,10 @@ body {
   color: #ddd;
 }
 
+.intro .demo {
+  font-size: 36px;
+}
+
 .intro button:hover {
   color: #f62b20;
   text-shadow: 0 0 5px #ddd;
