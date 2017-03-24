@@ -647,8 +647,8 @@ body {
   0% {visibility: hidden;}
   55% {visibility: hidden;}
   56% {visibility: visible;}
-  66% {visibility: visible;}
-  67% {visibility: hidden;}
+  67% {visibility: visible;}
+  67.5% {visibility: hidden;}
   100% {visibility: hidden;}
 }
 
@@ -939,7 +939,7 @@ body {
   background-image: url(../img/back/gameOver.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
+  display: none;
 }
 
 .gameOver header {
@@ -958,7 +958,7 @@ body {
 
 .gameOver footer {
   position: relative;
-  top: 430px;
+  top: 420px;
   right: 10px
 }
 
@@ -967,6 +967,6 @@ body {
 }
 
 .socialmedia img {
-  height: 25px;
-  width:  25px;
+  height: 30px;
+  width:  30px;
 }
