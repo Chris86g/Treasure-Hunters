@@ -20,22 +20,47 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
 }
 
 .intro h1 {
   font-size: 120px;
-  margin: 40px;
   color: #111;
   text-shadow: 0 0 5px #ddd;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.btns {
+  position: absolute;
+  top: 230px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro button {
+  height: 70px;
+  width: 200px;
+  margin: 20px;
+  background-color: #222;
+  box-shadow: 0 0 5px #ddd;
+  font-family: Rapscall, serif;
+  font-size: 48px;
+  color: #ddd;
+}
+
+.intro button:hover {
+  color: #f62b20;
+  text-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 5px #f62b20;
 }
 
 .background {
   background-image: url(../img/back/plank.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: none;
 }
 
 .sidePanel {
@@ -917,22 +942,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  display: none;
 }
 
 .gameOver h1 {
   font-size: 200px;
   color: #111;
   text-shadow: 0 0 8px #ddd;
-}
-
-.intro {
-
-}
-
-.background {
-  display: none;
-}
-
-.gameOver {
-  display: none;
 }
