@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
       endMP3.play();
       eFX.pause();
       secBackground.style.display = "none";
-      secGameOver.style.display = "flex";
+      secGameOver.style.display = "block";
     }, 130000);
   })
 })

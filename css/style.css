@@ -647,8 +647,8 @@ body {
   0% {visibility: hidden;}
   55% {visibility: hidden;}
   56% {visibility: visible;}
-  67% {visibility: visible;}
-  68% {visibility: hidden;}
+  66% {visibility: visible;}
+  67% {visibility: hidden;}
   100% {visibility: hidden;}
 }
 
@@ -722,7 +722,7 @@ body {
   background-image: url(../img/monkey/banana.png);
   background-repeat: no-repeat;
   background-size: contain;
-  animation: rotateBan 2s forwards;
+  animation: rotateBan 2s linear forwards;
 }
 
 .b1 {
@@ -939,14 +939,34 @@ body {
   background-image: url(../img/back/gameOver.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
+}
+
+.gameOver header {
+  position: relative;
+  top: 220px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  display: none;
 }
 
-.gameOver h1 {
+.gameOver header h1 {
   font-size: 200px;
   color: #111;
   text-shadow: 0 0 8px #ddd;
+}
+
+.gameOver footer {
+  position: relative;
+  top: 430px;
+  right: 10px
+}
+
+.socialmedia {
+  float: right;
+}
+
+.socialmedia img {
+  height: 25px;
+  width:  25px;
 }
