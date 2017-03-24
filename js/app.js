@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var button = document.querySelector('button');
 
   var introMP3 = document.querySelector('.intro audio');
-  var waveWAV = document.querySelector('.wave');
   var eFX = document.querySelector('.eFX');
+  var endMP3 = document.querySelector('.end');
 
   introMP3.play();
 
@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
     secBackground.style.display = "block";
     introMP3.pause();
     eFX.play();
-
+    setTimeout(function(){
+      endMP3.play();
+      eFX.pause();
+      secBackground.style.display = "none";
+      secGameOver.style.display = "flex";
+    }, 130000);
   })
 })
