@@ -39,7 +39,7 @@ body {
   flex-direction: column;
 }
 
-.intro button {
+button {
   height: 70px;
   width: 200px;
   margin: 20px;
@@ -50,14 +50,70 @@ body {
   color: #ddd;
 }
 
-.intro .demo {
+.intro .demoBtn {
   font-size: 36px;
 }
 
-.intro button:hover {
+button:hover {
   color: #f62b20;
   text-shadow: 0 0 5px #ddd;
   box-shadow: 0 0 5px #f62b20;
+}
+
+.info {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 10;
+}
+
+.infoWrap {
+  width: 980px;
+  height: 290px;
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  color: #ddd;
+  background-color: #111;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px #ddd;
+}
+
+.text {
+  font-size: 32px;
+  margin: 20px;
+  line-height: 44px;
+}
+
+.textR {
+  margin-top: 5px;
+  width: 300px;
+  float: left;
+}
+
+.textL {
+  margin-top: 5px;
+  float: left;
+}
+
+.text span {
+  color: #f62b20;
+}
+
+.socialmediaWrap {
+  position: absolute;
+  top: 252px;
+  right: 6.5px;
+}
+
+.info .closeBtn {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  position: absolute;
+  top: 6.5px;
+  right: 6.5px;
 }
 
 .background {
@@ -651,8 +707,8 @@ body {
   0% {visibility: hidden;}
   55% {visibility: hidden;}
   56% {visibility: visible;}
-  67% {visibility: visible;}
-  67.5% {visibility: hidden;}
+  66% {visibility: visible;}
+  67% {visibility: hidden;}
   100% {visibility: hidden;}
 }
 
@@ -681,6 +737,8 @@ body {
 }
 
 .bananaWrap {
+  width: 20px;
+  height: 20px;
   position: relative;
   left: 990px;
 }
@@ -816,12 +874,13 @@ body {
     visibility: visible;
     transform: translate(0, 0);
    }
-  40% { transform: translate(-150px, 0) rotate(0); }
-  60% { transform: translate(-150px, 0) rotate(20deg); }
-  99% { transform: translate(-180px, -100px) rotate(20deg); }
+  40% { transform: translate(-150px, -15px) rotate(0); }
+  60% { transform: translate(-150px, -15px) rotate(60deg); }
+  95% { transform: translate(-180px, -100px) rotate(60deg); }
+  99% { transform: translate(-180px, -100px) rotate(-40deg); }
   100% {
     visibility: hidden;
-    transform: translate(-180px, -100px) rotate(20deg);
+    transform: translate(-180px, -100px) rotate(-40deg);
   }
 }
 
@@ -922,15 +981,15 @@ body {
 .finalExplosion {
   position: relative;
   z-index: 10;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-image: url(../gif/giphy.gif);
   background-repeat: no-repeat;
-  background-size: contain;
-  top: -120px;
-  left: 1240px;
+  background-size: cover;
+  top: -100px;
+  left: 1250px;
   visibility: hidden;
-  animation: showFinEx 1.5s;
+  animation: showFinEx 5s;
   animation-delay: 124.5s;
 }
 
