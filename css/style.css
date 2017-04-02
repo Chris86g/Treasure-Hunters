@@ -439,7 +439,7 @@ button:hover {
   50% { transform: translate(-150px, 250px) scaleX(-1); }
   61% { transform: translate(-150px, 250px) scaleX(-1) rotate(20deg); }
   63% { transform: translate(-150px, 350px) scaleX(-1); }
-  66% { transform: translate(-50px, 350px) scaleX(-1) rotate(45deg); }
+  66% { transform: translate(-50px, 350px) scaleX(-1); }
   68% { transform: translate(-50px, 350px) scaleX(-1) rotate(90deg); }
   71% { transform: translate(-50px, 310px) scaleX(-1) rotate(90deg); }
   72% { transform: translate(-50px, 310px) scaleX(-1) rotate(0); }
@@ -829,6 +829,28 @@ button:hover {
   background-size: contain;
   top: 475px;
   left: 980px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .grave {
