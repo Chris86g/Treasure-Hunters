@@ -853,6 +853,18 @@ button:hover {
   }
 }
 
+.bnnsWrap {
+  animation: bnnsShow 100s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes bnnsShow {
+  0% {visibility: visible;}
+  69% {visibility: visible;}
+  70% {visibility: hidden;}
+  100% {visibility: hidden;}
+}
+
 .grave {
   position: absolute;
   z-index: 6;
@@ -863,12 +875,35 @@ button:hover {
   background-size: contain;
   top: 455px;
   left: 955px;
+  transform-origin: 20px 40px;
+  animation: graveSkew 2s linear infinite;
+}
+
+@keyframes graveSkew {
+  0% {
+    transform: skewX(0);
+  }
+  25% {
+    transform: skewX(15deg);
+  }
+  50% {
+    transform: skewX(0);
+  }
+  75% {
+    transform: skewX(-15deg);
+  }
+  100% {
+    transform: skewX(0);
+  }
+}
+
+.graveWrap {
   visibility: hidden;
-  animation: grave 100s forwards;
+  animation: graveShow 100s forwards;
   animation-delay: 2s;
 }
 
-@keyframes grave {
+@keyframes graveShow {
   0% {visibility: hidden;}
   68% {visibility: hidden;}
   69% {visibility: visible;}
