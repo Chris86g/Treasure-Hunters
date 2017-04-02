@@ -55,9 +55,14 @@ button {
 }
 
 button:hover {
+  transform: scale(1.05);
   color: #f62b20;
   text-shadow: 0 0 5px #ddd;
   box-shadow: 0 0 5px #f62b20;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
 }
 
 .info {
@@ -105,6 +110,10 @@ button:hover {
   position: absolute;
   top: 252px;
   right: 6.5px;
+}
+
+.socialmedia img:hover {
+  box-shadow: 0 0 5px #f62b20;
 }
 
 .info .closeBtn {
