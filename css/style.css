@@ -1,4 +1,6 @@
-@font-face { font-family: Rapscall; src: url('../fonts/RAPSCALL.TTF'); }
+@font-face {
+  font-family: Rapscall; src: url('../fonts/RAPSCALL.TTF');
+}
 
 * {
   margin: 0;
@@ -23,13 +25,14 @@ body {
 }
 
 .intro h1 {
-  font-size: 120px;
+  font-size: 7em;
   color: #111;
   text-shadow: 0 0 5px #ddd;
   position: absolute;
   top: 40px;
   right: 30px;
 }
+
 
 .btns {
   position: absolute;
@@ -75,7 +78,7 @@ button:hover {
 
 .infoWrap {
   width: 980px;
-  height: 290px;
+  max-height: 290px;
   position: absolute;
   top: 250px;
   left: 70px;
@@ -125,7 +128,48 @@ button:hover {
   right: 6.5px;
 }
 
-.background {
+.mobile {
+  display: none;
+  background-color: rgba(0,0,0,0.95);
+}
+
+.mobile h1 {
+  font-size: 7em;
+  color: #111;
+  text-shadow: 0 0 5px #ddd;
+  text-align: center;
+  padding: 1em;
+  z-index: 1;
+}
+
+.desktopMode {
+  margin: auto 0.45em;
+  font-size: 16vw;
+  text-align: center;
+  line-height: 22vw;
+  color: #111;
+  text-shadow: 0 0 5px #ddd;;
+  position: absolute;
+  top: 35%;
+}
+
+.socialmediaMobileWrap {
+  position: absolute;
+  top: 93.5vh;
+  right: 0.5vh;
+}
+
+.socialmediaMobile img {
+  height: 5vh;
+  width: 5vh;
+  margin: 0.5vh;
+}
+
+.socialmediaMobile img:hover {
+  box-shadow: 0 0 5px #f62b20;
+}
+
+.background, .mobile {
   background-image: url(../img/back/plank.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1098,4 +1142,16 @@ button:hover {
 .socialmedia img {
   height: 30px;
   width:  30px;
+}
+
+@media (max-width: 1365px) {
+  .intro {
+    display: none;
+  }
+}
+
+@media (max-width: 1365px) {
+  .mobile {
+    display: block;
+  }
 }
