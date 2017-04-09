@@ -128,11 +128,6 @@ button:hover {
   right: 6.5px;
 }
 
-.mobile {
-  display: none;
-  background-color: rgba(0,0,0,0.95);
-}
-
 .mobile h1 {
   font-size: 7em;
   color: #111;
@@ -176,6 +171,10 @@ button:hover {
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 .sidePanel {
   width: 30%;
   height: 550px;
@@ -210,8 +209,8 @@ button:hover {
   45% {visibility: visible;}
   53% {visibility: visible;}
   54% {visibility: hidden;}
-  71% {visibility: hidden;}
-  72% {visibility: visible;}
+  70% {visibility: hidden;}
+  71% {visibility: visible;}
   85% {visibility: visible;}
   86% {visibility: hidden;}
   100% {visibility: hidden;}
