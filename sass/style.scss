@@ -192,13 +192,9 @@ button:hover {
 .food {
   position: absolute;
   z-index: 5;
-  width: 75px;
-  height: 75px;
   background-image: url(../img/monkey/bananas.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 440px;
-  left: 80px;
   animation: food 100s;
   animation-delay: 2s;
 }
@@ -1672,10 +1668,22 @@ button:hover {
   .infoWrap {
     left: 25px;
   }
+  .food {
+    width: 55px;
+    height: 55px;
+    top: 440px;
+    left: 80px;
+  }
 }
 
 @media (min-width: 1365px) {
   .infoWrap {
     left: 75px;
+  }
+  .food {
+    width: 75px;
+    height: 75px;
+    top: 440px;
+    left: 80px;
   }
 }
