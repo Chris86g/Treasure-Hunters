@@ -7,7 +7,7 @@ Animation created by Chris Glinka, as a student project between 21st - 25th of M
 
 Technologies used:<br>
 HTML5<br>
-CSS3<br>
+CSS3 & SASS<br>
 JavaScript<br>
 Audacity 2.1.0<br>
 
