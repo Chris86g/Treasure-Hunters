@@ -253,13 +253,9 @@ button:hover {
 .rum {
   position: absolute;
   z-index: 5;
-  width: 75px;
-  height: 75px;
   background-image: url(../img/Rum_Bottle.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 420px;
-  left: 190px;
   visibility: hidden;
   animation: rum 100s;
   animation-delay: 2s;
@@ -295,13 +291,9 @@ button:hover {
 .barrelEmpty {
   position: absolute;
   z-index: 5;
-  width: 100px;
-  height: 100px;
   background-image: url(../img/bEmpty.ico);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 390px;
-  left: 280px;
   visibility: hidden;
   animation: showBEmpty 100s;
   animation-delay: 2s;
@@ -1671,8 +1663,26 @@ button:hover {
   .food {
     width: 55px;
     height: 55px;
-    top: 440px;
-    left: 80px;
+    top: 340px;
+    left: 50px;
+  }
+  .rum {
+    width: 55px;
+    height: 55px;
+    top: 320px;
+    left: 135px;
+  }
+  .barrelEmpty {
+    width: 70px;
+    height: 70px;
+    top: 300px;
+    left: 200px;
+  }
+  .barrelFull {
+    width: 70px;
+    height: 70px;
+    top: 300px;
+    left: 200px;
   }
 }
 
@@ -1685,5 +1695,23 @@ button:hover {
     height: 75px;
     top: 440px;
     left: 80px;
+  }
+  .rum {
+    width: 75px;
+    height: 75px;
+    top: 420px;
+    left: 190px;
+  }
+  .barrelEmpty {
+    width: 100px;
+    height: 100px;
+    top: 390px;
+    left: 280px;
+  }
+  .barrelFull {
+    width: 100px;
+    height: 100px;
+    top: 390px;
+    left: 280px;
   }
 }
