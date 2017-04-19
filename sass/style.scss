@@ -24,7 +24,6 @@ body {
   background-size: cover;
   background-position: center center;
   h1 {
-    font-size: 7em;
     color: #111;
     text-shadow: 0 0 5px #ddd;
     position: absolute;
@@ -1657,6 +1656,11 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
+  .intro {
+    h1 {
+      font-size: 5.5em;
+    }
+  }
   .infoWrap {
     left: 25px;
   }
@@ -1687,6 +1691,11 @@ button:hover {
 }
 
 @media (min-width: 1365px) {
+  .intro {
+    h1 {
+      font-size: 7em;
+    }
+  }
   .infoWrap {
     left: 75px;
   }
