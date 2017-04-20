@@ -24,6 +24,7 @@ body {
   background-size: cover;
   background-position: center center;
   h1 {
+
     color: #111;
     text-shadow: 0 0 5px #ddd;
     position: absolute;
@@ -392,30 +393,22 @@ button:hover {
 
 .sidePanel {
   h1 {
-    font-size: 42px;
     color: #222;
     text-shadow: 0 0 3px red;
     z-index: 15;
-    margin-top: 80px;
-    margin-left: 80px;
   }
   h2 {
-    font-size: 32px;
     color: #222;
     text-shadow: 0 0 3px red;
     z-index: 15;
-    margin: 35px 0 15px 80px;
   }
 }
 
 .bar {
-  height: 17px;
-  width: 252px;
   background-color: #222;
   border: 1px solid red;
   border-radius: 5px;
   box-shadow: 0 0 3px red;
-  margin-left: 80px;
 }
 
 .stripe {
@@ -440,62 +433,62 @@ button:hover {
   }
 
   22% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 
   22.5% {
-    width: 186px;
+    width: 75%;
     background-color: #26df26;
   }
 
   23% {
-    width: 186px;
+    width: 75%;
     background-color: #26df26;
   }
 
   24.5% {
-    width: 124px;
+    width: 50%;
     background-color: #f62b20;
   }
 
   25% {
-    width: 124px;
+    width: 50%;
     background-color: #f62b20;
   }
 
   26.5% {
-    width: 62px;
+    width: 25%;
     background-color: #f62b20;
   }
 
   27% {
-    width: 62px;
+    width: 25%;
     background-color: #f62b20;
   }
 
   44% {
-    width: 62px;
+    width: 25%;
     background-color: #f62b20;
   }
 
   45% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 
   80% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 
   80.5% {
-    width: 186px;
+    width: 75%;
     background-color: #26df26;
   }
 
   100% {
-    width: 186px;
+    width: 75%;
     background-color: #26df26;
   }
 }
@@ -513,62 +506,62 @@ button:hover {
   }
 
   19% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 
   19.5% {
-    width: 124px;
+    width: 50%;
     background-color: #f62b20;
   }
 
   25% {
-    width: 124px;
+    width: 50%;
     background-color: #f62b20;
   }
 
   25.5% {
-    width: 10px;
+    width: 3%;
     background-color: #f62b20;
   }
 
   44% {
-    width: 10px;
+    width: 3%;
     background-color: #f62b20;
   }
 
   45% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 
   77% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 
   77.5% {
-    width: 124px;
+    width: 50%;
     background-color: #f62b20;
   }
 
   80.5% {
-    width: 124px;
+    width: 50%;
     background-color: #f62b20;
   }
 
   81% {
-    width: 10px;
+    width: 3%;
     background-color: #f62b20;
   }
 
   99% {
-    width: 10px;
+    width: 3%;
     background-color: #f62b20;
   }
 
   100% {
-    width: 248px;
+    width: 100%;
     background-color: #26df26;
   }
 }
@@ -579,7 +572,6 @@ button:hover {
   height: 100vh;
   background-image: url(../img/back/map.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   z-index: 1;
   display: block;
   float: right;
@@ -1664,6 +1656,10 @@ button:hover {
   .infoWrap {
     left: 25px;
   }
+  .board {
+    background-size: contain;
+    margin-top: 50px;
+  }
   .food {
     width: 55px;
     height: 55px;
@@ -1688,6 +1684,26 @@ button:hover {
     top: 300px;
     left: 200px;
   }
+  .sidePanel {
+    h1 {
+      font-size: 34px;
+      margin-top: 60px;
+      margin-left: 45px;
+    }
+    h2 {
+      font-size: 24px;
+      margin: 16px 0 12px 50px;
+    }
+  }
+  .bar {
+    height: 13px;
+    width: 212px;
+    margin-left: 50px;
+  }
+  .stripe {
+    height: 9px;
+    width: 208px;
+  }
 }
 
 @media (min-width: 1365px) {
@@ -1698,6 +1714,10 @@ button:hover {
   }
   .infoWrap {
     left: 75px;
+  }
+  .board {
+    background-size: cover;
+    margin-top: 0;
   }
   .food {
     width: 75px;
@@ -1722,5 +1742,25 @@ button:hover {
     height: 100px;
     top: 390px;
     left: 280px;
+  }
+  .sidePanel {
+    h1 {
+      font-size: 42px;
+      margin-top: 80px;
+      margin-left: 80px;
+    }
+    h2 {
+      font-size: 32px;
+      margin: 35px 0 15px 80px;
+    }
+  }
+  .bar {
+    height: 17px;
+    width: 252px;
+    margin-left: 80px;
+  }
+  .stripe {
+    height: 13px;
+    width: 248px;
   }
 }
