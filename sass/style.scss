@@ -1441,19 +1441,19 @@ button:hover {
     }
 
     78% {
-      transform: translate(50px, 180px) scaleX(-1) rotate(-20deg);
+      transform: translate(50px, 180px) scaleX(-1) rotate(20deg);
     }
 
     80% {
-      transform: translate(100px, 180px) scaleX(-1) rotate(-20deg);
+      transform: translate(100px, 180px) scaleX(-1) rotate(20deg);
     }
 
     84% {
-      transform: translate(100px, 180px) scaleX(-1) rotate(-20deg);
+      transform: translate(100px, 180px) scaleX(-1) rotate(20deg);
     }
 
     85% {
-      transform: translate(170px, 170px) scaleX(-1) rotate(-20deg);
+      transform: translate(170px, 170px) scaleX(-1) rotate(20deg);
     }
 
     87% {
@@ -1479,8 +1479,8 @@ button:hover {
   .ship1 {
     width: 40px;
     height: 40px;
-    top: 10px;
-    left: 900px;
+    top: 30px;
+    left: 700px;
   }
   @keyframes ship1 {
     0% {
@@ -1497,11 +1497,11 @@ button:hover {
     }
 
     30% {
-      transform: translate(-100px, 60px) rotate(-40deg);
+      transform: translate(-100px, 100px) rotate(-40deg);
     }
 
     33% {
-      transform: translate(-100px, 60px) rotate(20deg);
+      transform: translate(-100px, 100px) rotate(20deg);
     }
 
     45% {
@@ -1513,21 +1513,21 @@ button:hover {
     }
 
     80% {
-      transform: translate(-230px, 80px) rotate(40deg);
+      transform: translate(-190px, 80px) rotate(40deg);
     }
 
     97% {
-      transform: translate(-250px, 80px) rotate(40deg);
+      transform: translate(-210px, 80px) rotate(40deg);
     }
 
     99% {
       visibility: visible;
-      transform: translate(-250px, 80px) rotate(-40deg);
+      transform: translate(-210px, 80px) rotate(-40deg);
     }
 
     100% {
       visibility: hidden;
-      transform: translate(-250px, 80px) rotate(-40deg);
+      transform: translate(-210px, 80px) rotate(-40deg);
     }
   }
   .explosion {
@@ -1548,8 +1548,8 @@ button:hover {
     transform-origin: 17.5px 21px;
   }
   .r1 {
-    top: 45px;
-    left: 560px;
+    top: 75px;
+    left: 490px;
   }
   .r2 {
     top: 270px;
@@ -1659,7 +1659,7 @@ button:hover {
   .ship2 {
     width: 40px;
     height: 40px;
-    top: 430px;
+    top: 350px;
     left: 880px;
   }
   @keyframes ship2 {
@@ -1734,8 +1734,8 @@ button:hover {
   .finalExplosion {
     width: 80px;
     height: 80px;
-    top: -100px;
-    left: 920px;
+    top: -40px;
+    left: 910px;
   }
 }
 
