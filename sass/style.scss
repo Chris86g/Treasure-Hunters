@@ -1379,57 +1379,61 @@ button:hover {
     }
 
     25% {
-      transform: translate(-225px, -20px) rotate(20deg);
+      transform: translate(-190px, 0px) rotate(20deg);
     }
 
     40% {
-      transform: translate(-280px, 100px);
+      transform: translate(-215px, 80px);
     }
 
     44% {
-      transform: translate(-300px, 90px) rotate(20deg);
+      transform: translate(-230px, 75px) rotate(20deg);
     }
 
     45% {
-      transform: translate(-300px, 90px) rotate(20deg);
+      transform: translate(-230px, 75px) rotate(20deg);
     }
 
     /*Tortuga*/
     46% {
-      transform: translate(-300px, 90px) rotate(20deg) scaleX(-1);
+      transform: translate(-230px, 75px) rotate(20deg) scaleX(-1);
+    }
+
+    48.5% {
+      transform: translate(-140px, 150px) scaleX(-1);
     }
 
     50% {
-      transform: translate(-150px, 250px) scaleX(-1);
+      transform: translate(-130px, 200px) scaleX(-1);
     }
 
     61% {
-      transform: translate(-150px, 250px) scaleX(-1) rotate(20deg);
+      transform: translate(-130px, 200px) scaleX(-1) rotate(20deg);
     }
 
     63% {
-      transform: translate(-150px, 350px) scaleX(-1);
+      transform: translate(-130px, 250px) scaleX(-1);
     }
 
     66% {
-      transform: translate(-50px, 350px) scaleX(-1);
+      transform: translate(-30px, 250px) scaleX(-1);
     }
 
     68% {
-      transform: translate(-50px, 350px) scaleX(-1) rotate(90deg);
+      transform: translate(-30px, 250px) scaleX(-1) rotate(90deg);
     }
 
     71% {
-      transform: translate(-50px, 310px) scaleX(-1) rotate(90deg);
+      transform: translate(-30px, 220px) scaleX(-1) rotate(90deg);
     }
 
     72% {
-      transform: translate(-50px, 310px) scaleX(-1) rotate(0);
+      transform: translate(-30px, 220px) scaleX(-1) rotate(0);
     }
 
     /*Ship2*/
     74% {
-      transform: translate(0, 310px) scaleX(-1);
+      transform: translate(0, 220px) scaleX(-1);
     }
 
     77% {
@@ -1449,27 +1453,27 @@ button:hover {
     }
 
     85% {
-      transform: translate(150px, 280px) scaleX(-1) rotate(-20deg);
+      transform: translate(150px, 250px) scaleX(-1) rotate(-20deg);
     }
 
     87% {
-      transform: translate(150px, 280px) scaleX(-1) rotate(90deg);
+      transform: translate(150px, 250px) scaleX(-1) rotate(90deg);
     }
 
     92% {
-      transform: translate(220px, 150px) scaleX(-1) rotate(90deg);
+      transform: translate(200px, 150px) scaleX(-1) rotate(90deg);
     }
 
     95% {
-      transform: translate(290px, 90px) scaleX(-1) rotate(0);
+      transform: translate(230px, 90px) scaleX(-1) rotate(0);
     }
 
     97% {
-      transform: translate(280px, 70px);
+      transform: translate(210px, 60px);
     }
 
     100% {
-      transform: translate(280px, 70px);
+      transform: translate(210px, 60px);
     }
   }
   .ship1 {
@@ -1607,7 +1611,7 @@ button:hover {
     }
 
     100% {
-      transform: translate(-105px, 0);
+      transform: translate(-115px, 0);
     }
   }
   .bW2 {
@@ -1619,7 +1623,7 @@ button:hover {
     }
 
     100% {
-      transform: translate(-105px, 50px);
+      transform: translate(-115px, 50px);
     }
   }
   .bW3 {
@@ -1631,7 +1635,7 @@ button:hover {
     }
 
     100% {
-      transform: translate(-55px, 50px);
+      transform: translate(-45px, 50px);
     }
   }
   .banana {
@@ -1724,14 +1728,14 @@ button:hover {
 
     100% {
       visibility: visible;
-      transform: translate(25px, 5px);
+      transform: translate(20px, 7px);
     }
   }
   .finalExplosion {
     width: 100px;
     height: 100px;
     top: -100px;
-    left: 950px;
+    left: 850px;
   }
 }
 
