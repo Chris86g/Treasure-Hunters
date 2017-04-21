@@ -1303,19 +1303,19 @@ button:hover {
   .rum {
     width: 55px;
     height: 55px;
-    top: 320px;
+    top: 330px;
     left: 135px;
   }
   .barrelEmpty {
     width: 70px;
     height: 70px;
-    top: 300px;
+    top: 310px;
     left: 200px;
   }
   .barrelFull {
     width: 70px;
     height: 70px;
-    top: 300px;
+    top: 310px;
     left: 200px;
   }
   .sidePanel {
@@ -1416,19 +1416,19 @@ button:hover {
     }
 
     66% {
-      transform: translate(-30px, 250px) scaleX(-1);
+      transform: translate(-20px, 250px) scaleX(-1);
     }
 
     68% {
-      transform: translate(-30px, 250px) scaleX(-1) rotate(90deg);
+      transform: translate(-20px, 250px) scaleX(-1) rotate(90deg);
     }
 
     71% {
-      transform: translate(-30px, 220px) scaleX(-1) rotate(90deg);
+      transform: translate(-20px, 220px) scaleX(-1) rotate(90deg);
     }
 
     72% {
-      transform: translate(-30px, 220px) scaleX(-1) rotate(0);
+      transform: translate(-20px, 220px) scaleX(-1) rotate(0);
     }
 
     /*Ship2*/
@@ -1552,8 +1552,8 @@ button:hover {
     left: 490px;
   }
   .r2 {
-    top: 270px;
-    left: 900px;
+    top: 230px;
+    left: 760px;
   }
   .shipyard {
     width: 40px;
@@ -1669,24 +1669,24 @@ button:hover {
     }
 
     40% {
-      transform: translate(-150px, -15px) rotate(0);
+      transform: translate(-100px, -15px) rotate(0);
     }
 
     60% {
-      transform: translate(-150px, -15px) rotate(60deg);
+      transform: translate(-100px, -15px) rotate(60deg);
     }
 
     95% {
-      transform: translate(-180px, -100px) rotate(60deg);
+      transform: translate(-120px, -80px) rotate(60deg);
     }
 
     99% {
-      transform: translate(-180px, -100px) rotate(-40deg);
+      transform: translate(-120px, -80px) rotate(-40deg);
     }
 
     100% {
       visibility: hidden;
-      transform: translate(-180px, -100px) rotate(-40deg);
+      transform: translate(-120px, -80px) rotate(-40deg);
     }
   }
   .treasure {
