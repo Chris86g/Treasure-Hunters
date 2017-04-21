@@ -1437,31 +1437,31 @@ button:hover {
     }
 
     77% {
-      transform: translate(50px, 250px) scaleX(-1);
+      transform: translate(50px, 200px) scaleX(-1);
     }
 
     78% {
-      transform: translate(50px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(50px, 180px) scaleX(-1) rotate(-20deg);
     }
 
     80% {
-      transform: translate(100px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(100px, 180px) scaleX(-1) rotate(-20deg);
     }
 
     84% {
-      transform: translate(100px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(100px, 180px) scaleX(-1) rotate(-20deg);
     }
 
     85% {
-      transform: translate(150px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(170px, 170px) scaleX(-1) rotate(-20deg);
     }
 
     87% {
-      transform: translate(150px, 250px) scaleX(-1) rotate(90deg);
+      transform: translate(170px, 170px) scaleX(-1) rotate(70deg);
     }
 
     92% {
-      transform: translate(200px, 150px) scaleX(-1) rotate(90deg);
+      transform: translate(200px, 150px) scaleX(-1) rotate(70deg);
     }
 
     95% {
@@ -1653,7 +1653,7 @@ button:hover {
     width: 30px;
     height: 30px;
     transform-origin: 15px 30px;
-    top: 370px;
+    top: 380px;
     left: 700px;
   }
   .ship2 {
@@ -1728,14 +1728,14 @@ button:hover {
 
     100% {
       visibility: visible;
-      transform: translate(20px, 7px);
+      transform: translate(20px, 6px);
     }
   }
   .finalExplosion {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     top: -100px;
-    left: 850px;
+    left: 920px;
   }
 }
 
