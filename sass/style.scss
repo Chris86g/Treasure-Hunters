@@ -1558,15 +1558,15 @@ button:hover {
     left: 450px;
   }
   .palm {
-    width: 100px;
-    height: 100px;
-    top: 380px;
-    left: 920px;
+    width: 70px;
+    height: 70px;
+    top: 335px;
+    left: 680px;
   }
   .bottle {
-    width: 50px;
-    height: 50px;
-    transform-origin: 5px 30px;
+    width: 35px;
+    height: 35px;
+    transform-origin: 5px 21px;
   }
   .bottleWrap {
     top: 430px;
@@ -1582,21 +1582,21 @@ button:hover {
     }
   }
   .monkey {
-    width: 75px;
-    height: 75px;
-    top: 430px;
-    left: 940px;
+    width: 50px;
+    height: 50px;
+    top: 380px;
+    left: 680px;
   }
   .monkeyFace {
-    width: 600px;
-    height: 600px;
+    width: 480px;
+    height: 480px;
     top: 60px;
-    left: 750px;
+    left: 540px;
   }
   .bananaWrap {
     width: 20px;
     height: 20px;
-    left: 990px;
+    left: 700px;
   }
   .bW1 {
     top: 210px;
@@ -1640,23 +1640,23 @@ button:hover {
     transform-origin: 10px 10px;
   }
   .bananas {
-    width: 30px;
-    height: 30px;
-    top: 475px;
-    left: 980px;
+    width: 25px;
+    height: 25px;
+    top: 390px;
+    left: 710px;
   }
   .grave {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transform-origin: 20px 40px;
-    top: 455px;
-    left: 955px;
+    top: 370px;
+    left: 700px;
   }
   .ship2 {
     width: 55px;
     height: 55px;
     top: 430px;
-    left: 1280px;
+    left: 880px;
   }
   @keyframes ship2 {
     0% {
@@ -1686,16 +1686,16 @@ button:hover {
     }
   }
   .treasure {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     top: 230px;
-    left: 1200px;
+    left: 900px;
   }
   .ufo {
     width: 100px;
     height: 55px;
-    top: 50px;
-    left: 650px;
+    top: 10px;
+    left: 450px;
   }
   @keyframes ufo {
     0% {
@@ -1709,7 +1709,7 @@ button:hover {
 
     100% {
       visibility: visible;
-      transform: translate(0, 250px) scale(12);
+      transform: translate(0, 250px) scale(10);
     }
   }
   .beam {
@@ -1731,7 +1731,7 @@ button:hover {
     width: 100px;
     height: 100px;
     top: -100px;
-    left: 1250px;
+    left: 950px;
   }
 }
 
