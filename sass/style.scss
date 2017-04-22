@@ -678,19 +678,10 @@ button:hover {
     visibility: visible;
   }
 
-  83% {
+  100% {
     visibility: visible;
   }
-
-  84% {
-    visibility: hidden;
-  }
-
-  100% {
-    visibility: hidden;
-  }
 }
-
 
 .ex2 {
   animation: showEx2 15s;
@@ -1141,16 +1132,8 @@ button:hover {
     visibility: visible;
   }
 
-  85% {
-    visibility: visible;
-  }
-
-  86% {
-    visibility: hidden;
-  }
-
   100% {
-    visibility: hidden;
+    visibility: visible;
   }
 }
 
@@ -1244,19 +1227,16 @@ button:hover {
   display: none;
   header {
     position: relative;
-    top: 220px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     h1 {
-      font-size: 200px;
       color: #111;
       text-shadow: 0 0 8px #ddd;
     }
   }
   footer {
     position: relative;
-    top: 420px;
     right: 10px;
   }
 }
@@ -1452,11 +1432,11 @@ button:hover {
       transform: translate(100px, 180px) scaleX(-1) rotate(20deg);
     }
 
-    85% {
+    87% {
       transform: translate(170px, 170px) scaleX(-1) rotate(20deg);
     }
 
-    87% {
+    89% {
       transform: translate(170px, 170px) scaleX(-1) rotate(70deg);
     }
 
@@ -1635,7 +1615,7 @@ button:hover {
     }
 
     100% {
-      transform: translate(-45px, 50px);
+      transform: translate(-35px, 50px);
     }
   }
   .banana {
@@ -1736,6 +1716,17 @@ button:hover {
     height: 80px;
     top: -40px;
     left: 910px;
+  }
+  .gameOver {
+    header {
+      top: 140px;
+      h1 {
+        font-size: 160px;
+      }
+    }
+    footer {
+      top: 380px;
+    }
   }
 }
 
@@ -1895,27 +1886,27 @@ button:hover {
     }
 
     78% {
-      transform: translate(50px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(50px, 250px) scaleX(-1) rotate(20deg);
     }
 
     80% {
-      transform: translate(100px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(100px, 250px) scaleX(-1) rotate(20deg);
     }
 
     84% {
-      transform: translate(100px, 250px) scaleX(-1) rotate(-20deg);
+      transform: translate(100px, 250px) scaleX(-1) rotate(20deg);
     }
 
     85% {
-      transform: translate(150px, 280px) scaleX(-1) rotate(-20deg);
+      transform: translate(150px, 280px) scaleX(-1) rotate(20deg);
     }
 
     87% {
-      transform: translate(150px, 280px) scaleX(-1) rotate(90deg);
+      transform: translate(150px, 280px) scaleX(-1) rotate(70deg);
     }
 
     92% {
-      transform: translate(220px, 150px) scaleX(-1) rotate(90deg);
+      transform: translate(220px, 150px) scaleX(-1) rotate(70deg);
     }
 
     95% {
@@ -2190,5 +2181,16 @@ button:hover {
     height: 100px;
     top: -100px;
     left: 1250px;
+  }
+  .gameOver {
+    header {
+      top: 220px;
+      h1 {
+        font-size: 200px;
+      }
+    }
+    footer {
+      top: 420px;
+    }
   }
 }
