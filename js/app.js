@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
   demoBtn.addEventListener('click', function() {
+    grenade.currentTime = 0;
     grenade.play();
   })
 
